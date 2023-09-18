@@ -1,0 +1,17 @@
+Evaluation Task: Using GDELT as a source
+The Data Against Feminicides project helps activists tracking gender-based killings of women across the world by automating parts of their meticulous data
+production process. Specifically, we build tools that discover news stories that *might* be about feminicides, filter those using a bespoke classifier for
+high scoring candidate articles, cluster those stories that are related to the same event, and deliver those via email. We currently ingest from newscatcher
+and Media Cloud. Would it be possible and useful to ingest from  GDELT as well? Your task is to quickly explore the GDELT project and try out their API.
+
+A few key questions:
+
+    Can we use code to fetch lists of URLs matching boolean queries?
+    If so, how do we filter to results from the last three days and page through those?
+    Can we filter by geographic country or state/provide of publication?
+    Are there API limits? Are there any associated monetary costs?
+
+Here is a real example query from a project monitoring for these types of killings in Argentina. You can use this to test with:
+(asesinato OR homicidio OR femicidio OR feminicidio OR travesticidio OR transfemicidio OR Lesbicidio OR asesina OR asesinada OR muerta OR muerte OR mata OR mató OR dispara OR balea OR apuñala OR acuchillada OR golpeada OR estrangula OR ahogada OR degollada OR incinera OR quemada OR envenenada OR "prendida fuego" OR descuartizada OR "sin vida" OR intento OR "intento de asesinato" OR "Intentó asesinarla" OR "intento de femicidio" OR "intento de transfemicidio" OR "intento de travesticidio" OR "intento de lesbicidio" OR "intentó matarla" OR suicidio OR "se quito la vida" OR "se mató" OR "se suicido" OR "se ahorco") AND (mujer OR niña OR "una joven" OR "una adolescente" OR "una chica" OR "cuerpo de una mujer" OR "restos" OR "cadaver de una mujer" OR prostituta OR "trabajadora sexual" OR "mujer trans" OR "una travesti" OR "hombre vestido de mujer")
+
+This is a prototype evaluation task that you should spend 3-4 hours on. Share back Python code or a Jupyter notebook and a short summary of your first thoughts.
